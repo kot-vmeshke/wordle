@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: darkcyan;
+  color: #ffffff;
+}
+.container {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-title {
+  letter-spacing: 0.2em;
+  font-size: 3em;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.buttons-wrap {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 400px;
+}
+.btn {
+  display: block;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  font-size: 1em;
+  font-weight: bold;
+  color: chocolate;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #ffffff;
+}
+
+.game-board {
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+.letter {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: transparent;
+  text-align: center;
+  font-size: 2em;
+  width: 100%;
+  text-transform: uppercase;
+}
+.letter:focus-visible {
+  outline: #ffffff solid 1px;
+  outline-offset: -2px;
+}
